@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Template</title>
+    
+    <!-- MathJax for LaTeX Support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        td:first-child {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+    .highlight-blue {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .highlight-yellow {
+        background-color: #ffc107;
+    }
+</style>
+
+</head>
+<body>
+    <h1>\(\pi_i\mathrm{Diff}_\partial(D^n)\)</h1>
+    
+    <p>
+        These are the homotopy groups of the group of the space of diffeomorphisms of the disc that fix a neighborhood of the boundary. By Kupers book Thm 38.2.1 we have that for \(n\geq 3\) but \(\neq 5,7\) that the homtopy groups of \(\mathrm{Diff}(D^n)\) is finitely generated, by general theory the homotopy groups are abelian for \(i\geq 2\). Thus in these cases they are direct sums of cyclic groups and the integers. 
+    </p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>\( D^0\)</th>
+                <th>\( D^1\)</th>
+                <th>\( D^2\)</th>
+                <th>\( D^3\)</th>
+                <th>\( D^4\)</th>
+                <th>\( D^5\)</th>
+                <th>\( D^6\)</th>
+                <th>\( D^7\)</th>
+                <th>\( D^8\)</th>
+                <th>\( D^9\)</th>
+                <th>\( D^{10}\)</th>
+                <th>\( D^{11}\)</th>
+                <th>\( D^{12}\)</th>
+                <th>\( D^{13}\)</th>
+                <th>\( D^{14}\)</th>
+                <th>\( D^{15}\)</th>
+                <th>\( D^{16}\)</th>
+                <th>\(k\geq 2, \; D^{4k+1}\)</th>
+                <th>\( D^{4k+2}\)</th>
+                <th>\( D^{4k+3}\)</th>
+                <th>\(k\geq 3, \; D^{4k}\)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>\(\pi_0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\Theta_6\)</td>
+                <td class="highlight-yellow">\(\Theta_7\)</td>
+                <td class="highlight-yellow">\(\Theta_8\)</td>
+                <td class="highlight-yellow">\(\Theta_9\)</td>
+                <td class="highlight-yellow">\(\Theta_{10}\)</td>
+                <td class="highlight-yellow">\(\Theta_{11}\)</td>
+                <td class="highlight-yellow">\(\Theta_{12}\)</td>
+                <td class="highlight-yellow">\(\Theta_{13}\)</td>
+                <td class="highlight-yellow">\(\Theta_{14}\)</td>
+                <td class="highlight-yellow">\(\Theta_{15}\)</td>
+                <td class="highlight-yellow">\(\Theta_{16}\)</td>
+                <td class="highlight-yellow">\(\Theta_{17}\)</td>
+                <td class="highlight-yellow">\(\Theta_{4k+2}\)</td>
+                <td class="highlight-yellow">\(\Theta_{4k+3}\)</td>
+                <td class="highlight-yellow">\(\Theta_{4k}\)</td>
+                <td class="highlight-yellow">\(\Theta_{4k+1}\)</td>
+            </tr>
+            <tr>
+                <td>\(\pi_1\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\neq 0\)</td>
+                <td>\(\)</td>
+                <td>\(\subseteq\mathbb{Z}_2\)</td>
+                <td class="highlight-yellow">\(\pi_2\frac{\tilde{\mathrm{Diff}_\partial}(D^7)}{\mathrm{Diff}_\partial(D^7)} \oplus \mathbb{Z}_2^3\)</td>
+                <td class="highlight-yellow">\(\subseteq \mathbb{Z}_2 \oplus \mathbb{Z}_3\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(k=3, \subseteq \mathbb{Z}_2\)</td>
+                <td class="highlight-yellow">\(k=2, \mathbb{Z}_2\)</td>
+                <td class="highlight-yellow">\(k=2, \subseteq \mathbb{Z}_3\) \(k=3, \mathbb{Z}_2^5\)</td>
+                <td class="highlight-yellow">\(\Theta_{4k+2}\)</td>
+            </tr>
+            <tr>
+                <td>\(\pi_2\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\Gamma_3^{4k+2}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+            <tr>
+                <td>\(\pi_3\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\subseteq\mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq\mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq\mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq\mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq\mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+            <tr>
+                <td>\(\pi_4\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td><td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+            <tr>
+                <td>\(\pi_5\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+            <tr>
+                <td>\(i\geq 1, \pi_{4i+2}\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr><tr>
+                <td>\(\pi_{4i+3}\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+               <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq \mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\subseteq \mathbb{Z}\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+            <tr>
+                <td>\(i\geq 2, \pi_{4i}\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+              <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr><tr>
+                <td>\(\pi_{4i+1}\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(0\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td><td>\(\)</td>
+                <td>\(\)</td>
+                <td>\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+                <td class="highlight-yellow">\(\)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        \(\Theta_n\) denotes the group of homotopy spheres as in Kervaire-Milnor.  \(\Gamma_m^{n}\) denotes the Gromoll groups as in <a href="https://arxiv.org/abs/1204.6474">arXiv:1204.6474</a>. The yellow background indicates the concordance stable range i.e. for \(\pi_i\mathrm{Diff}_\partial(D^n)\) for the computation is valid when \(i\leq min(\frac{n-1}{3}, \frac{n-5}{2})\), the second value is smaller when \(n\leq 13\) and the first is smaller for \(n\geq 13\). So after what I have indicated they keep climing in a \(\pi_i\) for every increase in of \(3\) in the dimension of the disc. For the results that we list with general indecies we will just assume that they are in the stable range, hence the slab of yellow in the bottom right corner.
+    </p>
+    <p> Some details and references for the computations of the table are as follows:</p>
+    <ul>
+        <li>\(D^0\) is a point and the diffeomorphisms are clearly unique.</li>
+        <li>Kupers Theorem 1.3.2 attributed to Folklore, Hatcher and Smale showed that \(\mathrm{Diff}_\partial(D^i), i=1,2,3\) is weakly contractible.</li>
+        <li>For \(D^4\) according to <a href="https://arxiv.org/abs/2307.03417">arXiv:2307.03417</a> remark 1.2 it is known that \(\pi_1\mathrm{Diff}_\partial(D^4)\) is non-trivial, however it appears as though very little is known.</li>
+        <li> The misc results, results on \(\pi_1\mathrm{Diff}_\partial(D^{4k})\) and \(\pi_2\mathrm{Diff}_\partial(D^{4k+3})\) are from <a href="https://arxiv.org/abs/2504.04875">arXiv:2504.04875</a></li>
+        <li> The \(\pi_0\) groups are <a href="https://rileymoriss.github.io/Notes/Research/PhD/Smooth_structures.pdf">well known</a>.</li>
+        <li> The rational homotopy groups tell us the non-torsion parts of these finitely generated abelian groups, these are known in the "concordance stable range". The general formula is \[ \pi_k\mathrm{Diff}_\partial(D^n) = \begin{cases}\mathbb{Q}, & \text{n odd and }k\equiv 3 \text{ mod }4 \\
+            0, \text{else}\end{cases}\] 
+        These were computed by many people, but the final step was by Farrell-Hsiang. See ... </li>
+    </ul>
+    <p>Other relevant tables are</p>
+    <ul>
+        <li><a href="http://www.map.mpim-bonn.mpg.de/Exotic_spheres">The values of \(bP_{n}\)</a></li>
+    </ul>
+
+    <p>Kupers in section 25.1 gives a different stable range, I would like to know why. I should add the original references not Kupers book.</p>
+</body>
+</html>
